@@ -1,0 +1,64 @@
+﻿<Page x:Class="TestTask.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestTask"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1600"
+      Title="HomePage">
+    <Grid Background="#121F2C">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.RowSpan="3" Background="#1D2E43">
+            <Grid>
+                <StackPanel>
+                    <Button Height="80" Width="80" Margin="5" Background="#1D2E43" BorderBrush="#1D2E43">
+                        <Image Source="Images/HomeImg.png"></Image>
+                    </Button>
+                    <Button Click="CoinPage_Button_Click" Height="80" Width="80" Margin="5" Background="#1D2E43" BorderBrush="#1D2E43">
+                        <Image Source="Images/CoinImg.png" Width="50"></Image>
+                    </Button>
+                    <Button Click="ExchangePage_Button_Click" Height="80" Width="80" Margin="5" Background="#1D2E43" BorderBrush="#1D2E43">
+                        <Image Source="Images/TradeIMG.png" Width="50"></Image>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <StackPanel>
+                <TextBlock Foreground="WhiteSmoke" FontSize="40" TextAlignment="Center" Margin="40">CryptoAnalytic</TextBlock>
+            </StackPanel>
+            <ListView x:Name="coinListView" Height="500" Background="#1D2E43" Foreground="WhiteSmoke" HorizontalAlignment="Center" FontSize="18">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Rank" DisplayMemberBinding="{Binding Rank}" Width="50"/>
+                        <GridViewColumn Header="Symbol" DisplayMemberBinding="{Binding Symbol}" Width="80"/>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="120"/>
+                        <GridViewColumn Header="Market Cap (USD)" DisplayMemberBinding="{Binding MarketCapUsd}" Width="290"/>
+                        <GridViewColumn Header="Price (USD)" DisplayMemberBinding="{Binding PriceUsd}" Width="220"/>
+                        <GridViewColumn Header="Change (24hr)" DisplayMemberBinding="{Binding ChangePercent24Hr}" Width="200"/>
+                    </GridView>
+                </ListView.View>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#1D2E43"/>
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="Background" Value="#121F2C"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Page>

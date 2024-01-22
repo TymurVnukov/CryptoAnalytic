@@ -1,0 +1,1098 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiveChartsCore.SkiaSharpView.Avalonia</name>
+    </assembly>
+    <members>
+        <member name="T:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart">
+            <inheritdoc cref="T:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1" />
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.legend">
+            <summary>
+            The legend
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.tooltip">
+            <summary>
+            The tool tip
+            </summary>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart"/> class.
+            </summary>
+            <exception cref="T:System.Exception">Default colors are not valid</exception>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.DrawMarginProperty">
+            <summary>
+            The draw margin property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.SyncContextProperty">
+            <summary>
+            The sync context property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TitleProperty">
+            <summary>
+            The title property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.SeriesProperty">
+            <summary>
+            The series property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.XAxesProperty">
+            <summary>
+            The x axes property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.YAxesProperty">
+            <summary>
+            The y axes property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.SectionsProperty">
+            <summary>
+            The sections property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.VisualElementsProperty">
+            <summary>
+            The visual elements property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.DrawMarginFrameProperty">
+            <summary>
+            The draw margin frame property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ZoomModeProperty">
+            <summary>
+            The zoom mode property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ZoomingSpeedProperty">
+            <summary>
+            The zooming speed property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.AnimationsSpeedProperty">
+            <summary>
+            The animations speed property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.EasingFunctionProperty">
+            <summary>
+            The easing function property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipPositionProperty">
+            <summary>
+            The tool tip position property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipFindingStrategyProperty">
+            <summary>
+            The tool tip finding strategy property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipBackgroundPaintProperty">
+            <summary>
+            The tooltip background paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipTextPaintProperty">
+            <summary>
+            The tooltip text paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipTextSizeProperty">
+            <summary>
+            The tooltip text size property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LegendPositionProperty">
+            <summary>
+            The legend position property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LegendBackgroundPaintProperty">
+            <summary>
+            The legend background paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LegendTextPaintProperty">
+            <summary>
+            The legend text paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LegendTextSizeProperty">
+            <summary>
+            The legend text size property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.DataPointerDownCommandProperty">
+            <summary>
+            The data pointer down command property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ChartPointPointerDownCommandProperty">
+            <summary>
+            The <see cref="T:LiveChartsCore.Kernel.ChartPoint"/> pointer down command property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.VisualElementsPointerDownCommandProperty">
+            <summary>
+            The <see cref="T:LiveChartsCore.VisualElements.VisualElement`1"/> pointer down command property
+            </summary>
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.Measuring">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.Measuring" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.UpdateStarted">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.UpdateStarted" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.UpdateFinished">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.UpdateFinished" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.DataPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView.DataPointerDown" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ChartPointPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView.ChartPointPointerDown" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.VisualElementsPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.VisualElementsPointerDown"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LiveChartsCore#Kernel#Sketches#IChartView#DesignerMode">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.DesignerMode" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.CoreChart">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.CoreChart" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.CoreCanvas">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.CoreCanvas" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.DrawMargin">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.DrawMargin" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.SyncContext">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.SyncContext" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.Title">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Title" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.Series">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.Series" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.XAxes">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.XAxes" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.YAxes">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.YAxes" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.Sections">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.Sections" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.VisualElements">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.VisualElements" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.DrawMarginFrame">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.DrawMarginFrame" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ZoomMode">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.ZoomMode" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ZoomingSpeed">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.ZoomingSpeed" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.AnimationsSpeed">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.AnimationsSpeed" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.EasingFunction">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.EasingFunction" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipPosition">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.TooltipPosition" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.Tooltip">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Tooltip" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipFindingStrategy">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.TooltipFindingStrategy" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipBackgroundPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipBackgroundPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipTextPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipTextPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.TooltipTextSize">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipTextSize" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LegendPosition">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.LegendPosition" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LegendBackgroundPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendBackgroundPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LegendTextPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendTextPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.LegendTextSize">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendTextSize" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.Legend">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Legend" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.AutoUpdateEnabled">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.AutoUpdateEnabled" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.UpdaterThrottler">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.UpdaterThrottler" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.DataPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a data or data points.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ChartPointPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a chart point.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.VisualElementsPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a visual element(s).
+            </summary>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ScaleUIPoint(LiveChartsCore.Drawing.LvcPoint,System.Int32,System.Int32)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.ScaleUIPoint(LiveChartsCore.Drawing.LvcPoint,System.Int32,System.Int32)" />
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ScalePixelsToData(LiveChartsCore.Drawing.LvcPointD,System.Int32,System.Int32)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.ScalePixelsToData(LiveChartsCore.Drawing.LvcPointD,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ScaleDataToPixels(LiveChartsCore.Drawing.LvcPointD,System.Int32,System.Int32)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.ICartesianChartView`1.ScaleDataToPixels(LiveChartsCore.Drawing.LvcPointD,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.GetPointsAt(LiveChartsCore.Drawing.LvcPoint,LiveChartsCore.Measure.TooltipFindingStrategy)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.GetPointsAt(LiveChartsCore.Drawing.LvcPoint,LiveChartsCore.Measure.TooltipFindingStrategy)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.GetVisualsAt(LiveChartsCore.Drawing.LvcPoint)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.GetVisualsAt(LiveChartsCore.Drawing.LvcPoint)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.ShowTooltip(System.Collections.Generic.IEnumerable{LiveChartsCore.Kernel.ChartPoint})">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.ShowTooltip(System.Collections.Generic.IEnumerable{LiveChartsCore.Kernel.ChartPoint})"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.HideTooltip">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.HideTooltip"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.InitializeCore">
+            <summary>
+            Initializes the core.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})">
+            <inheritdoc cref="M:LiveChartsCore.SkiaSharpView.Avalonia.CartesianChart.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})" />
+        </member>
+        <member name="T:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap">
+            <inheritdoc cref="T:LiveChartsCore.Geo.IGeoMapView`1"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap"/> class.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.ActiveMapProperty">
+            <summary>
+            The active map property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.SyncContextProperty">
+            <summary>
+            The active map property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.ViewCommandProperty">
+            <summary>
+            The active map property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.MapProjectionProperty">
+            <summary>
+            The projection property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.SeriesProperty">
+            <summary>
+            The series property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.StrokeProperty">
+            <summary>
+            The stroke property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.FillProperty">
+            <summary>
+            The fill color property.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.AutoUpdateEnabled">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.AutoUpdateEnabled" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.LiveChartsCore#Geo#IGeoMapView{LiveChartsCore#SkiaSharpView#Drawing#SkiaSharpDrawingContext}#DesignerMode">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.DesignerMode" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.SyncContext">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.SyncContext" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.ViewCommand">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.ViewCommand" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.Canvas">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.Canvas"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.ActiveMap">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.ActiveMap"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.LiveChartsCore#Geo#IGeoMapView{LiveChartsCore#SkiaSharpView#Drawing#SkiaSharpDrawingContext}#Width">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.Width"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.LiveChartsCore#Geo#IGeoMapView{LiveChartsCore#SkiaSharpView#Drawing#SkiaSharpDrawingContext}#Height">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.Height"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.MapProjection">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.MapProjection"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.Stroke">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.Stroke"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.Fill">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.Fill"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.Series">
+            <inheritdoc cref="P:LiveChartsCore.Geo.IGeoMapView`1.Series"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})">
+            <inheritdoc cref="M:LiveChartsCore.SkiaSharpView.Avalonia.GeoMap.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})"/>
+        </member>
+        <member name="T:LiveChartsCore.SkiaSharpView.Avalonia.LegendBindingContext">
+            <summary>
+            The legend binding context.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.LegendBindingContext.Series">
+            <summary>
+            Gets or sets the series.
+            </summary>
+            <value>
+            The series.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.LegendBindingContext.FontFamily">
+            <summary>
+            Gets or sets the font family.
+            </summary>
+            <value>
+            The font family.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.LegendBindingContext.FontSize">
+            <summary>
+            Gets or sets the size of the font.
+            </summary>
+            <value>
+            The size of the font.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.LegendBindingContext.FontWeight">
+            <summary>
+            Gets or sets the font weight.
+            </summary>
+            <value>
+            The font weight.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.LegendBindingContext.FontStyle">
+            <summary>
+            Gets or sets the font style.
+            </summary>
+            <value>
+            The font style.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.LegendBindingContext.TextBrush">
+            <summary>
+            Gets or sets the text brush.
+            </summary>
+            <value>
+            The text brush.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.LegendBindingContext.Background">
+            <summary>
+            Gets or sets the background.
+            </summary>
+            <value>
+            The background.
+            </value>
+        </member>
+        <member name="T:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas">
+            <summary>
+            The motion canvas control for avalonia, <see cref="T:LiveChartsCore.Motion.MotionCanvas`1"/>.
+            </summary>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas"/> class.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas.PaintTasksProperty">
+            <summary>
+            The paint tasks property
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas.PaintTasks">
+            <summary>
+            Gets or sets the paint tasks.
+            </summary>
+            <value>
+            The paint tasks.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas.MaxFps">
+            <summary>
+            Gets or sets the frames per second.
+            </summary>
+            <value>
+            The frames per second.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas.CanvasCore">
+            <summary>
+            Gets the canvas core.
+            </summary>
+            <value>
+            The canvas core.
+            </value>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas.Render(Avalonia.Media.DrawingContext)">
+            <summary>
+            Renders the control.
+            </summary>p
+            <param name="context"></param>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})">
+            <inheritdoc cref="M:LiveChartsCore.SkiaSharpView.Avalonia.MotionCanvas.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})" />
+        </member>
+        <member name="T:LiveChartsCore.SkiaSharpView.Avalonia.PieChart">
+            <inheritdoc cref="T:LiveChartsCore.Kernel.Sketches.IPieChartView`1" />
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.legend">
+            <summary>
+            The legend
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.tooltip">
+            <summary>
+            The tooltip
+            </summary>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LiveChartsCore.SkiaSharpView.Avalonia.PieChart"/> class.
+            </summary>
+            <exception cref="T:System.Exception">Default colors are not valid</exception>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.DrawMarginProperty">
+            <summary>
+            The draw margin property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.SyncContextProperty">
+            <summary>
+            The sync context property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TitleProperty">
+            <summary>
+            The title property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.SeriesProperty">
+            <summary>
+            The series property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.VisualElementsProperty">
+            <summary>
+            The visual elements property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.IsClockwiseProperty">
+            <summary>
+            The IsClockwise property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.InitialRotationProperty">
+            <summary>
+            The initial rotation property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.MaxAngleProperty">
+            <summary>
+            The maximum angle property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TotalProperty">
+            <summary>
+            The total property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.AnimationsSpeedProperty">
+            <summary>
+            The animations speed property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.EasingFunctionProperty">
+            <summary>
+            The easing function property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TooltipPositionProperty">
+            <summary>
+            The tool tip position property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TooltipBackgroundPaintProperty">
+            <summary>
+            The tooltip background paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TooltipTextPaintProperty">
+            <summary>
+            The tooltip text paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TooltipTextSizeProperty">
+            <summary>
+            The tooltip text size property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LegendPositionProperty">
+            <summary>
+            The legend position property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LegendBackgroundPaintProperty">
+            <summary>
+            The legend background paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LegendTextPaintProperty">
+            <summary>
+            The legend text paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LegendTextSizeProperty">
+            <summary>
+            The legend text size property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.DataPointerDownCommandProperty">
+            <summary>
+            The data pointer down command property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.ChartPointPointerDownCommandProperty">
+            <summary>
+            The chart point pointer down command property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.VisualElementsPointerDownCommandProperty">
+            <summary>
+            The <see cref="T:LiveChartsCore.VisualElements.VisualElement`1"/> pointer down command property
+            </summary>
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.Measuring">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.Measuring" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.UpdateStarted">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.UpdateStarted" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.UpdateFinished">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.UpdateFinished" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.DataPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView.DataPointerDown" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.ChartPointPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView.ChartPointPointerDown" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.VisualElementsPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.VisualElementsPointerDown"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LiveChartsCore#Kernel#Sketches#IChartView#DesignerMode">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.DesignerMode" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.CoreChart">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.CoreChart" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.SyncContext">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.SyncContext" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.CoreCanvas">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.CoreCanvas" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.DrawMargin">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.DrawMargin" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.Title">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Title" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.Series">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPieChartView`1.Series" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.VisualElements">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.VisualElements" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.IsClockwise">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPieChartView`1.IsClockwise" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.InitialRotation">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPieChartView`1.InitialRotation" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.MaxAngle">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPieChartView`1.MaxAngle" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.Total">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPieChartView`1.Total" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.AnimationsSpeed">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.AnimationsSpeed" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.EasingFunction">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.EasingFunction" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TooltipPosition">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.TooltipPosition" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TooltipBackgroundPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipBackgroundPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TooltipTextPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipTextPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.TooltipTextSize">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipTextSize" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.Tooltip">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Tooltip" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LegendPosition">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.LegendPosition" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LegendBackgroundPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendBackgroundPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LegendTextPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendTextPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.LegendTextSize">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendTextSize" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.Legend">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Legend" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.AutoUpdateEnabled">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.AutoUpdateEnabled" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.UpdaterThrottler">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.UpdaterThrottler" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.DataPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a data or data points.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.ChartPointPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a chart point.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.VisualElementsPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a visual element(s).
+            </summary>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.ShowTooltip(System.Collections.Generic.IEnumerable{LiveChartsCore.Kernel.ChartPoint})">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.ShowTooltip(System.Collections.Generic.IEnumerable{LiveChartsCore.Kernel.ChartPoint})"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.HideTooltip">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.HideTooltip"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.GetPointsAt(LiveChartsCore.Drawing.LvcPoint,LiveChartsCore.Measure.TooltipFindingStrategy)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.GetPointsAt(LiveChartsCore.Drawing.LvcPoint,LiveChartsCore.Measure.TooltipFindingStrategy)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.GetVisualsAt(LiveChartsCore.Drawing.LvcPoint)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.GetVisualsAt(LiveChartsCore.Drawing.LvcPoint)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.InitializeCore">
+            <summary>
+            Initializes the core.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})">
+            <inheritdoc cref="M:LiveChartsCore.SkiaSharpView.Avalonia.PieChart.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})" />
+        </member>
+        <member name="T:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart">
+            <inheritdoc cref="T:LiveChartsCore.Kernel.Sketches.IPolarChartView`1" />
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.legend">
+            <summary>
+            The legend
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.tooltip">
+            <summary>
+            The tool tip
+            </summary>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart"/> class.
+            </summary>
+            <exception cref="T:System.Exception">Default colors are not valid</exception>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.SyncContextProperty">
+            <summary>
+            The sync context property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TitleProperty">
+            <summary>
+            The title property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.SeriesProperty">
+            <summary>
+            The series property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.VisualElementsProperty">
+            <summary>
+            The visual elements property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.FitToBoundsProperty">
+            <summary>
+            The fit to bounds property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TotalAngleProperty">
+            <summary>
+            The total angle property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.InnerRadiusProperty">
+            <summary>
+            The inner radius property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.InitialRotationProperty">
+            <summary>
+            The initial rotation property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.AngleAxesProperty">
+            <summary>
+            The x axes property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.RadiusAxesProperty">
+            <summary>
+            The y axes property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.AnimationsSpeedProperty">
+            <summary>
+            The animations speed property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.EasingFunctionProperty">
+            <summary>
+            The easing function property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipPositionProperty">
+            <summary>
+            The tool tip position property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipFindingStrategyProperty">
+            <summary>
+            The tool tip finding strategy property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipBackgroundPaintProperty">
+            <summary>
+            The tooltip background paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipTextPaintProperty">
+            <summary>
+            The tooltip text paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipTextSizeProperty">
+            <summary>
+            The tooltip text size property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LegendPositionProperty">
+            <summary>
+            The legend position property.
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LegendBackgroundPaintProperty">
+            <summary>
+            The legend background paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LegendTextPaintProperty">
+            <summary>
+            The legend text paint property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LegendTextSizeProperty">
+            <summary>
+            The legend text size property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.DataPointerDownCommandProperty">
+            <summary>
+            The data pointer down command property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.ChartPointPointerDownCommandProperty">
+            <summary>
+            The chart point pointer down command property
+            </summary>
+        </member>
+        <member name="F:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.VisualElementsPointerDownCommandProperty">
+            <summary>
+            The <see cref="T:LiveChartsCore.VisualElements.VisualElement`1"/> pointer down command property
+            </summary>
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.Measuring">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.Measuring" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.UpdateStarted">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.UpdateStarted" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.UpdateFinished">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.UpdateFinished" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.DataPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView.DataPointerDown" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.ChartPointPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView.ChartPointPointerDown" />
+        </member>
+        <member name="E:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.VisualElementsPointerDown">
+            <inheritdoc cref="E:LiveChartsCore.Kernel.Sketches.IChartView`1.VisualElementsPointerDown"/>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LiveChartsCore#Kernel#Sketches#IChartView#DesignerMode">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.DesignerMode" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.CoreChart">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.CoreChart" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.CoreCanvas">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.CoreCanvas" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.DrawMargin">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.DrawMargin" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.SyncContext">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.SyncContext" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.FitToBounds">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.FitToBounds" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TotalAngle">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.TotalAngle" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.InnerRadius">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.InnerRadius" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.InitialRotation">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.InitialRotation" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.Title">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Title" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.Series">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.Series" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.AngleAxes">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.AngleAxes" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.RadiusAxes">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.RadiusAxes" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.VisualElements">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.VisualElements" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.AnimationsSpeed">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.AnimationsSpeed" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.EasingFunction">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.EasingFunction" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipPosition">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.TooltipPosition" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipBackgroundPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipBackgroundPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipTextPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipTextPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.TooltipTextSize">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.TooltipTextSize" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.Tooltip">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Tooltip" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LegendPosition">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.LegendPosition" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LegendBackgroundPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendBackgroundPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LegendTextPaint">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendTextPaint" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.LegendTextSize">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.LegendTextSize" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.Legend">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.Legend" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.AutoUpdateEnabled">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView`1.AutoUpdateEnabled" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.UpdaterThrottler">
+            <inheritdoc cref="P:LiveChartsCore.Kernel.Sketches.IChartView.UpdaterThrottler" />
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.DataPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a data or data points.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.ChartPointPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a chart point.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.VisualElementsPointerDownCommand">
+            <summary>
+            Gets or sets a command to execute when the pointer goes down on a visual element(s).
+            </summary>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.ScalePixelsToData(LiveChartsCore.Drawing.LvcPointD,System.Int32,System.Int32)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.ScalePixelsToData(LiveChartsCore.Drawing.LvcPointD,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.ScaleDataToPixels(LiveChartsCore.Drawing.LvcPointD,System.Int32,System.Int32)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IPolarChartView`1.ScaleDataToPixels(LiveChartsCore.Drawing.LvcPointD,System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.GetPointsAt(LiveChartsCore.Drawing.LvcPoint,LiveChartsCore.Measure.TooltipFindingStrategy)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.GetPointsAt(LiveChartsCore.Drawing.LvcPoint,LiveChartsCore.Measure.TooltipFindingStrategy)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.GetVisualsAt(LiveChartsCore.Drawing.LvcPoint)">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.GetVisualsAt(LiveChartsCore.Drawing.LvcPoint)"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.ShowTooltip(System.Collections.Generic.IEnumerable{LiveChartsCore.Kernel.ChartPoint})">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.ShowTooltip(System.Collections.Generic.IEnumerable{LiveChartsCore.Kernel.ChartPoint})"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.HideTooltip">
+            <inheritdoc cref="M:LiveChartsCore.Kernel.Sketches.IChartView`1.HideTooltip"/>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.InitializeCore">
+            <summary>
+            Initializes the core.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})">
+            <inheritdoc cref="M:LiveChartsCore.SkiaSharpView.Avalonia.PolarChart.OnPropertyChanged``1(Avalonia.AvaloniaPropertyChangedEventArgs{``0})" />
+        </member>
+        <member name="T:LiveChartsCore.SkiaSharpView.Avalonia.TooltipBindingContext">
+            <summary>
+            Defines the tool tip binding context.
+            </summary>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.TooltipBindingContext.Points">
+            <summary>
+            Gets or sets the points.
+            </summary>
+            <value>
+            The points.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.TooltipBindingContext.TooltipFontFamily">
+            <summary>
+            Gets or sets the tool tip font family.
+            </summary>
+            <value>
+            The tool tip font family.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.TooltipBindingContext.TooltipFontSize">
+            <summary>
+            Gets or sets the size of the tool tip font.
+            </summary>
+            <value>
+            The size of the tool tip font.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.TooltipBindingContext.TooltipFontWeight">
+            <summary>
+            Gets or sets the tool tip font weight.
+            </summary>
+            <value>
+            The tool tip font weight.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.TooltipBindingContext.TooltipFontStyle">
+            <summary>
+            Gets or sets the tool tip font style.
+            </summary>
+            <value>
+            The tool tip font style.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.TooltipBindingContext.TooltipTextBrush">
+            <summary>
+            Gets or sets the tool tip text brush.
+            </summary>
+            <value>
+            The tool tip text brush.
+            </value>
+        </member>
+        <member name="P:LiveChartsCore.SkiaSharpView.Avalonia.TooltipBindingContext.TooltipBackground">
+            <summary>
+            Gets or sets the tool tip background.
+            </summary>
+            <value>
+            The tool tip background.
+            </value>
+        </member>
+    </members>
+</doc>

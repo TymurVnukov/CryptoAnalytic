@@ -1,0 +1,52 @@
+﻿<Page x:Class="TestTask.Exchange"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestTask"
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1600"
+      Title="Exchange">
+
+    <Grid Background="#121F2C">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.RowSpan="3" Background="#1D2E43">
+            <Grid>
+                <StackPanel>
+                    <Button Click="HomePage_Button_Click" Height="80" Width="80" Margin="5" Background="#1D2E43" BorderBrush="#1D2E43">
+                        <Image Source="Images/HomeImg.png"></Image>
+                    </Button>
+                    <Button Click="CoinPage_Button_Click" Height="80" Width="80" Margin="5" Background="#1D2E43" BorderBrush="#1D2E43">
+                        <Image Source="Images/CoinImg.png" Width="50"></Image>
+                    </Button>
+                    <Button Height="80" Width="80" Margin="5" Background="#1D2E43" BorderBrush="#1D2E43">
+                        <Image Source="Images/TradeIMG.png" Width="50"></Image>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <StackPanel>
+                <TextBlock Foreground="WhiteSmoke" FontSize="40" TextAlignment="Center" Margin="40">CryptoAnalytic</TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Width="250">
+                <TextBox x:Name="FromCoinTextBox" Margin="10" Height="40" FontSize="18" Background="#1D2E43" Foreground="WhiteSmoke"></TextBox>
+                <ComboBox x:Name="LeftExchangeComboBox" Margin="10 0 10 0" Height="40" FontSize="18" Background="#1D2E43"></ComboBox>
+            </StackPanel>
+            <Button Width="200" Height="40" Click="Button_Click" FontSize="18" Background="#1D2E43" Foreground="WhiteSmoke">Convert</Button>
+            <StackPanel Width="250">
+                <TextBox x:Name="ToCoinTextBox" Margin="10" Height="40" IsEnabled="False" FontSize="18" Background="#1D2E43" Foreground="WhiteSmoke"></TextBox>
+                <ComboBox x:Name="RightExchangeComboBox" Margin="10 0 10 0" Height="40" FontSize="18" Background="#1D2E43"></ComboBox>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Avalonia.Native</name>
+    </assembly>
+    <members>
+        <member name="M:Avalonia.Native.WindowImpl.SetExtendClientAreaToDecorationsHint(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Avalonia.Native.WindowImpl.SetExtendClientAreaChromeHints(Avalonia.Platform.ExtendClientAreaChromeHints)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Avalonia.Native.WindowImpl.SetExtendClientAreaTitleBarHeightHint(System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="P:Avalonia.Native.WindowImpl.NeedsManagedDecorations">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
