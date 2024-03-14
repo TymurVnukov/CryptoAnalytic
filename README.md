@@ -1,3 +1,4 @@
+# CryptoAnalytic - Release date 21.01.2024
 Implemented functionality:
    Multi-page application with navigation.
    The main page displays the top 10 currencies that were returned by API.
